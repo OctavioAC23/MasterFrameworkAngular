@@ -1,0 +1,35 @@
+<header id="header">
+    <div class="center">
+        <!-- Logo -->
+        <div id="Logo">
+            <img src="./assets/Imagenes/angular.svg" class="app-logo" alt ="Logotipo"/>
+            <span id="brand">
+                <strong>Curso</strong>Angular
+            </span>
+        </div>
+        <!-- Menu de navegacion-->
+        <nav id="menu">
+            <ul>
+                <li>
+                  <a (click)="navigate($event, 'home')" style="cursor: pointer;" [class.active]="activeLink === 'home'">Inicio</a>
+                </li>
+                <li>
+                  <a (click)="navigate($event, 'blog')" style="cursor: pointer;" [class.active]="activeLink === 'blog'">Blog</a>
+                </li>
+                <li>
+                  <a (click)="navigate($event, 'formulario')" style="cursor: pointer;" [class.active]="activeLink === 'formulario'">Formulario</a>
+                </li>
+                <li>
+                  <a (click)="navigate($event, 'peliculas')" style="cursor: pointer;" [class.active]="activeLink === 'peliculas'">Peliculas</a>
+                </li>
+                <li>
+                  <a (click)="navigate($event, 'pagina-de-prueba')" style="cursor: pointer;" [class.active]="activeLink === 'pagina'">Pagina</a>
+                </li>
+            </ul>              
+        </nav>
+        <!--Limpiar Flotados-->
+        <div class="clearfix">
+            
+        </div>
+    </div>
+</header>
